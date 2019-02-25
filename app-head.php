@@ -1,0 +1,36 @@
+<!-- Bootstrap -->
+<link href="public/plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="public/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- NProgress -->
+<link href="public/plugins/nprogress/nprogress.css" rel="stylesheet">
+<!-- iCheck -->
+<link href="public/plugins/iCheck/skins/flat/green.css" rel="stylesheet">
+<!-- bootstrap-wysiwyg -->
+<link href="public/plugins/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+<!-- Select2 -->
+<link href="public/plugins/select2/dist/css/select2.min.css" rel="stylesheet">
+<!-- Switchery -->
+<link href="public/plugins/switchery/dist/switchery.min.css" rel="stylesheet">
+<!-- starrr -->
+<link href="public/plugins/starrr/dist/starrr.css" rel="stylesheet">
+<!-- PNotify -->
+<link href="public/plugins/pnotify/dist/pnotify.css" rel="stylesheet">
+<link href="public/plugins/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+<link href="public/plugins/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+<!-- bootstrap-progressbar -->
+<link href="public/plugins/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+<!-- JQVMap -->
+<link href="public/plugins/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+<!-- Datatables -->
+<link href="public/plugins/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+<link href="public/plugins/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+<link href="public/plugins/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+<link href="public/plugins/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+<link href="public/plugins/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+<!-- bootstrap-daterangepicker -->
+<link href="public/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+<!-- Custom Theme Style -->
+<link href="public/css/custom.css" rel="stylesheet">
+<!-- Alert -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
