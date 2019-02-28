@@ -68,7 +68,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-2 col-sm-2 col-xs-12" for="last-name">Cedula Identidad</label>
                                         <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                                            <input type="text" class="form-control has-feedback-left" id="ci">
+                                            <input type="number" class="form-control has-feedback-left" id="ci">
                                             <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
                                         </div>
                                         <label class="control-label col-md-2 col-sm-2 col-xs-12">Expedicion</label>
@@ -90,7 +90,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Correo Electronico</label>
                                         <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                                            <input type="text" class="form-control has-feedback-left" id="email">
+                                            <input type="email" class="form-control has-feedback-left" id="email">
                                             <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
                                         </div>
                                         <label class="control-label col-md-2 col-sm-2 col-xs-12">Genero</label>
@@ -105,12 +105,12 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Telefono / Celular</label>
                                         <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                                            <input type="text" class="form-control has-feedback-left" id="telefono">
+                                            <input type="number" class="form-control has-feedback-left" id="telefono">
                                             <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
                                         </div>
                                         <label class="control-label col-md-2 col-sm-2 col-xs-12">Fecha Nacimiento</label>
                                         <div class="col-md-4 col-sm-4 col-xs-12">
-                                            <input type="text" class="form-control" id="fec_nac" data-inputmask="'mask': '99/99/9999'">
+                                            <input type="date" class="form-control" id="fec_nac" data-inputmask="'mask': '99/99/9999'">
                                             <span class="fa fa-user form-control-feedback right" aria-hidden="true"></span>
                                         </div>
                                     </div>
@@ -124,7 +124,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Contraseña<span class="required">*</span></label>
                                         <div class="col-md-10 col-sm-10 col-xs-12 form-group has-feedback">
-                                            <input type="text" class="form-control has-feedback-left" id="pass">
+                                            <input type="pass" class="form-control has-feedback-left" id="pass">
                                             <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
                                         </div>
                                     </div>

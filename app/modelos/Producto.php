@@ -52,12 +52,12 @@ class Producto{
 	}
 
 	public function compraProductosEspecifico($datos){
-		$sql = "SELECT cod_compra_producto, cod_item_producto, nombre_producto, imagen_producto, cantidad_compra_producto, precio_unit_compra_producto, precio_sugerido_venta, observacion_compra_producto, fecha_compra_producto, hora_compra_producto, cod_almacenamiento, CONCAT(cod_almacenamiento) as 'nombre_almacenamiento', CONCAT(nombre_usuario, ' ', appat_usuario, ' ', apmat_usuario) as 'personal' FROM compra_producto, producto, usuario WHERE compra_producto.cod_producto = producto.cod_producto and compra_producto.cod_usuario = usuario.cod_usuario and compra_producto.cod_producto = ? and precio_unit_compra_producto = ? and precio_sugerido_venta = ? and cod_almacenamiento = ?;";
+		$sql = "SELECT cod_compra_producto, producto.cod_producto, nombre_producto, imagen_producto, cantidad_compra_producto, precio_unit_compra_producto, precio_sugerido_venta, observacion_compra_producto, fecha_compra_producto, hora_compra_producto, cod_almacenamiento, CONCAT(cod_almacenamiento) as 'nombre_almacenamiento', CONCAT(nombre_usuario, ' ', appat_usuario, ' ', apmat_usuario) as 'personal' FROM compra_producto, producto, usuario WHERE compra_producto.cod_producto = producto.cod_producto and compra_producto.cod_usuario = usuario.cod_usuario and compra_producto.cod_producto = ? and precio_unit_compra_producto = ? and precio_sugerido_venta = ? and cod_almacenamiento = ?;";
 		return $this->db->select($sql, $datos);
 	}
 
 	public function compraProductosEspecificoCodInventario($datos){
-		$sql = "SELECT cod_compra_producto, cod_item_producto, nombre_producto, imagen_producto, cantidad_compra_producto, precio_unit_compra_producto, precio_sugerido_venta, observacion_compra_producto, fecha_compra_producto, hora_compra_producto, cod_almacenamiento, CONCAT(cod_almacenamiento) as 'nombre_almacenamiento', CONCAT(nombre_usuario, ' ', appat_usuario, ' ', apmat_usuario) as 'personal' FROM compra_producto, producto, usuario WHERE compra_producto.cod_producto = producto.cod_producto and compra_producto.cod_usuario = usuario.cod_usuario and compra_producto.cod_inventario = ?;";
+		$sql = "SELECT cod_compra_producto, producto.cod_producto, nombre_producto, imagen_producto, cantidad_compra_producto, precio_unit_compra_producto, precio_sugerido_venta, observacion_compra_producto, fecha_compra_producto, hora_compra_producto, cod_almacenamiento, CONCAT(cod_almacenamiento) as 'nombre_almacenamiento', CONCAT(nombre_usuario, ' ', appat_usuario, ' ', apmat_usuario) as 'personal' FROM compra_producto, producto, usuario WHERE compra_producto.cod_producto = producto.cod_producto and compra_producto.cod_usuario = usuario.cod_usuario and compra_producto.cod_inventario = ?;";
 		return $this->db->select($sql, $datos);
 	}
 
@@ -67,12 +67,12 @@ class Producto{
 	}
 
 	public function reporteListaCompraProductos($datos){
-		$sql = "SELECT cod_compra_producto, cod_item_producto, nombre_producto, imagen_producto, cantidad_compra_producto, precio_unit_compra_producto, precio_sugerido_venta, observacion_compra_producto, fecha_compra_producto, hora_compra_producto, cod_almacenamiento, CONCAT(cod_almacenamiento) as 'nombre_almacenamiento', CONCAT(nombre_usuario, ' ', appat_usuario, ' ', apmat_usuario) as 'personal' FROM compra_producto, producto, usuario WHERE compra_producto.cod_producto = producto.cod_producto and compra_producto.cod_usuario = usuario.cod_usuario and MONTH(fecha_compra_producto) = ? and YEAR(fecha_compra_producto) = ?;";
+		$sql = "SELECT cod_compra_producto, producto.cod_producto, nombre_producto, imagen_producto, cantidad_compra_producto, precio_unit_compra_producto, precio_sugerido_venta, observacion_compra_producto, fecha_compra_producto, hora_compra_producto, cod_almacenamiento, CONCAT(cod_almacenamiento) as 'nombre_almacenamiento', CONCAT(nombre_usuario, ' ', appat_usuario, ' ', apmat_usuario) as 'personal' FROM compra_producto, producto, usuario WHERE compra_producto.cod_producto = producto.cod_producto and compra_producto.cod_usuario = usuario.cod_usuario and MONTH(fecha_compra_producto) = ? and YEAR(fecha_compra_producto) = ?;";
 		return $this->db->select($sql, $datos);
 	}
 	
 	public function reporteListaCompraProductosAlmacenamiento($datos){
-		$sql = "SELECT cod_compra_producto, cod_item_producto, nombre_producto, imagen_producto, cantidad_compra_producto, precio_unit_compra_producto, precio_sugerido_venta, observacion_compra_producto, fecha_compra_producto, hora_compra_producto, cod_almacenamiento, CONCAT(cod_almacenamiento) as 'nombre_almacenamiento', CONCAT(nombre_usuario, ' ', appat_usuario, ' ', apmat_usuario) as 'personal' FROM compra_producto, producto, usuario WHERE compra_producto.cod_producto = producto.cod_producto and compra_producto.cod_usuario = usuario.cod_usuario and compra_producto.cod_almacenamiento = ? and MONTH(fecha_compra_producto) = ? and YEAR(fecha_compra_producto) = ?;";
+		$sql = "SELECT cod_compra_producto, producto.cod_producto, nombre_producto, imagen_producto, cantidad_compra_producto, precio_unit_compra_producto, precio_sugerido_venta, observacion_compra_producto, fecha_compra_producto, hora_compra_producto, cod_almacenamiento, CONCAT(cod_almacenamiento) as 'nombre_almacenamiento', CONCAT(nombre_usuario, ' ', appat_usuario, ' ', apmat_usuario) as 'personal' FROM compra_producto, producto, usuario WHERE compra_producto.cod_producto = producto.cod_producto and compra_producto.cod_usuario = usuario.cod_usuario and compra_producto.cod_almacenamiento = ? and MONTH(fecha_compra_producto) = ? and YEAR(fecha_compra_producto) = ?;";
 		return $this->db->select($sql, $datos);
 	}
 }

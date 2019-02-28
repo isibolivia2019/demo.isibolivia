@@ -63,19 +63,29 @@ session_start();
             </ul>
           </li>
           <?php }?>
+          <?php if($_SESSION['Permiso_Trasnferencia'] == 1){?>
+          <li><a><i class="fa fa-exchange"></i> Transferencias <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+              <li><a href="transferencia.php">Realizar Transferencia</a></li>
+              <li><a href="transferencia-lista.php">Lista de Transferencia</a></li>
+            </ul>
+          </li>
+          <?php }?>
           <?php if($_SESSION['Permiso_Venta'] == 1){?>
           <li><a><i class="fa fa-money"></i> Ventas <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
               <li><a href="venta.php">Realizar Venta</a></li>
-              <li><a href="venta-lista.php">lista de Ventas</a></li>
+              <li><a href="venta-lista.php">Lista de Ventas</a></li>
             </ul>
           </li>
           <?php }?>
           <?php if($_SESSION['Permiso_Reporte'] == 1){?>
           <li><a><i class="fa fa-file-text"></i> Reportes <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
-              <li><a href="index.html">Realizar una Comprar</a></li>
-              <li><a href="index2.html">Registro de Compras</a></li>
+              <li><a href="reporte-caja-chica.php">Caja Chica</a></li>
+              <li><a href="reporte-compra.php">Compras</a></li>
+              <li><a href="reporte-venta.php">Ventas</a></li>
+              <li><a href="reporte-traspaso.php">Traspasos</a></li>
             </ul>
           </li>
           <?php }?>
