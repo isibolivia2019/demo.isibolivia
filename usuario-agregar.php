@@ -256,6 +256,7 @@ function agregarUsuario(){
       data: parametros,
       url:'app/controladores/Usuarios.php',
       success:function(data){
+          console.log("data",data)
           datos = JSON.parse(data);
           if(datos.resp == "true"){
               new PNotify({
