@@ -164,7 +164,7 @@ function agregarUsuario(){
         $datos = array($ci, $pass);
         $listaUsuario = $modelo->autentificacionUsuario($datos);
 
-        $datos = array($listaUsuario[0]["cod_usuario"], "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", $registro, $notificacion);
+        $datos = array($listaUsuario[0]["cod_usuario"], "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", $registro, $notificacion);
         $resp = $modelo->agregarPrivilegio($datos);
 
         $registrosNotificaciones = new RegistrosNotificaciones();
