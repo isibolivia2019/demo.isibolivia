@@ -5,7 +5,6 @@ class Producto{
 	public function __construct(){
 		$this->db = new Base;
 	}
-
 	public function listaComprasProductoCodigo($datos){
 		$sql = "SELECT * FROM compra_producto WHERE cod_producto = ?";
 		return $this->db->select($sql, $datos);

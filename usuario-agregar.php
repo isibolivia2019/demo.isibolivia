@@ -32,7 +32,6 @@
                         <h3>Usuario</h3>
                     </div>
                 </div>
-
                 <div class="clearfix"></div>
 
                 <div class="row">

@@ -199,6 +199,7 @@
         </div>
         <!-- /page content -->
 
+
         <!-- footer content -->
         <?php require("app-footer.php");?>
         <!-- /footer content -->
