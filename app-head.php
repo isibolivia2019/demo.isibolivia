@@ -1,7 +1,7 @@
 <!-- Bootstrap -->
 <link href="public/plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Font Awesome -->
-<link href="public/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- NProgress -->
 <link href="public/plugins/nprogress/nprogress.css" rel="stylesheet">
 <!-- iCheck -->
